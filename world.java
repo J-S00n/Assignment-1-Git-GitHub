@@ -1,16 +1,17 @@
-import java.util. *;
+import java.util.Scanner;
 public class world {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+        System.out.println("This is a program to find the sum of first k elements of an array");
         System.out.println("Enter the number of elements in the array");
-        int n = sc.nextInt();
-        int[] arr = new int[n];
+        int num = input.nextInt();
+        int[] arr = new int[num];
         System.out.println("Enter the elements in the array");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            arr[i] = input.nextInt();
         }
         System.out.println("Enter the value of k");
-        int k = sc.nextInt();
+        int k = input.nextInt();
         int sum = 0;
         for (int i = 0; i < k; i++) {
             sum += arr[i];
